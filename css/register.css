@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    header{
+
+        max-height: 10vh;
+    
+        .navbar-light .navbar-brand {
+        color: #fff;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+        }
+      
+        .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+        color: #fff;
+        }
+      
+        .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+        }
+      
+        .navbar-toggler {
+        background: #fff;
+        }
+      
+        .navbar-nav {
+        text-align: center;
+        }
+      
+        .nav-link {
+        padding: .2rem 1rem;
+        }
+      
+        .nav-link.active,.nav-link:focus{
+        color: #fff;
+        }
+      
+        .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        line-height: 0.3;
+        }
+      
+        .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: #fff;
+        }
+    }
+
+    main{
+        .registerSection{
+            background-color: rgb(43, 42, 42);
+            justify-content: center;
+            margin: 100px 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 2px solid purple;
+            border-radius: 20px;
+
+            }
+
+
+            .registerH2{
+                color: white;
+                font-size: 2rem;
+            }
+
+            .registerForm{
+                width: 100%;
+                text-align: center;
+                padding-top: 20px;
+
+                input{
+                    padding: 7px;
+                    margin: 5px;
+                    margin-bottom: 15px;
+                    height: 50px;
+                    width: 80%;
+                    border: 2px solid purple;
+                    border-radius: 20px;
+                    font-size: 1.1rem;
+                    transition: all 0.7s ease;
+                }
+
+                .error{
+                    color: red;
+                    font-size: 1rem;
+                    display: flex;
+                    justify-content: center;
+                }
+
+
+                input:focus{
+                    transform: scale(1.034);
+                    transition: 0.7s;
+                }
+                select{
+                    padding: 7px;
+                    margin: 5px;
+                    margin-bottom: 15px;
+                    height: 50px;
+                    width: 80%;
+                    border: 2px solid purple;
+                    border-radius: 20px;
+                    font-size: 1.1rem;
+                    transition: all 0.7s ease;
+                }
+                select:focus{
+                    transform: scale(1.034);
+                    transition: 0.7s;
+                }
+
+                .botonReg:hover{
+                    color: white;
+                    background-color: purple;
+                    cursor: pointer;
+                    transform: scale(1.034);
+                    transition: 0.5s;
+                }
+
+            }
+
+
+        }
+    }
+

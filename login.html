@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Bootstrap CSS v5.2.1 -->
+            <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Iniciar Sesion</title>
+</head>
+<body>
+    <header class="header">
+        <!--<h1 class="h1header">CINEMA<br>ADROGUE</h1> --->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="/index.html">CINE CODO A CODO</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+        </header>
+
+    <main>
+    <div class="containerLogin">
+      <h2 class="tituloRegistrarse">Iniciar Sesión</h2><br>
+        <div class="formulario">
+
+            <form id="loginForm" class="formularioInicioSesion" action="">
+
+            <p>Ingrese el nombre de su usuario:<br>
+            <input class="usuario" type="text" id="usuario" name="usuario">
+            </p>
+            <span id="errorUsuario" class="error"></span><br>
+
+            <p>Ingrese su contraseña:<br>
+            <input class="inputContraseña" type="password" id="contraseña" name="contraseña">
+            </p>
+            <span id="errorContraseña" class="error"></span><br>
+
+            <div class="divBoton">
+            <!--  <input class="boton" onclick="return validar(this.form)" type="submit" value="Iniciar Sesion">-->
+            <input type="submit" class="botonlog" value="Iniciar Sesion">
+            </div><br>
+
+            </form>
+        </div>
+    </div>
+    </main>
+  
+    <script src="./js/mainlog.js"></script>
+</body>
+</html>
