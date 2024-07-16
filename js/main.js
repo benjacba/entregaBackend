@@ -64,6 +64,12 @@ function validar(formulario){
         formulario.terminos.focus();
         return false;
     }
+
+    alert("Se ha completado el registro correctamente!");
+
+    window.location.href = "index.html";
+    
+    return true;
 }
 
 

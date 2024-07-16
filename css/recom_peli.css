@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+
+    header{
+        .regylognav{
+          display: flex;
+          padding-left: 320px;
+          padding-right: 30px;
+          font-weight: bold;
+          font-size: large;
+        }
+    
+        .registernav{
+          border:#202428 2px solid;
+          border-radius: 20px;
+          padding-right: 4px;
+        }
+    
+        .loginnav{
+          border:#202428 2px solid;
+          border-radius: 20px;
+          padding-left: 4px;
+        }
+    
+        .apinav2{
+          display: inline-block;
+          font-size: large;
+          border: purple 3px solid;
+          border-radius: 60px;
+          justify-content: center;
+    
+        }
+    
+        .registernav:hover{
+          transition: all 0.7s ease;
+          border: purple 3px solid;
+        }
+        .loginnav:hover{
+          transition: all 0.7s ease;
+          border: purple 3px solid;
+        }
+    
+        .navbar-light .navbar-brand {
+        color: #fff;
+        font-size: 25px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        }
+      
+        .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+        color: #fff;
+        }
+      
+        .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+        }
+      
+        .navbar-toggler {
+        background: #fff;
+        }
+      
+        .navbar-nav {
+        text-align: center;
+        }
+      
+        .nav-link {
+        padding: .2rem 1rem;
+        }
+      
+        .nav-link.active,.nav-link:focus{
+        color: #fff;
+        }
+      
+        .navbar-toggler {
+        padding: 1px 5px;
+        font-size: 18px;
+        }
+      
+        .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+        color: #fff;
+        }
+      }
+
+    main{
+        .h1recomendacionpeli{
+            text-align: center;
+            color: white;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .formrow{
+          
+          display: flex;
+          justify-content: left;
+
+        }
+
+        .formgroup{
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+        }
+
+        label{
+            color: white;
+        }
+
+        #titulopelicula, #genero, #duracion,#sinopsis, #imagenpelicula{
+            width: 600px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        #imagenpelicula{
+            background-color: #fff;
+            color: black;
+        }
+        #imagenpelicula::file-selector-button{
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        #submit{
+            color: #fff;
+            background-color: purple;
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            font-size: large;
+        }
+        @media (max-width:991px) {
+          .formrow {
+              flex-direction: column;
+          }
+      
+          .formgroup {
+              width: 100%;
+          }
+      
+          .title {
+              position: static;
+              text-align: center;
+              margin-bottom: 20px;
+          }
+      }
+
+
+/*  Pelis Recomendadas  */
+        hr{
+          border: 0;
+          border-top: 1px solid #fff;
+          margin: 10px 0;
+        }
+
+        .h2pelisrecomendadas{
+          color: white;
+          text-align: left;
+        }
+
+
+    }
+
+
+    
+    footer{
+      .flechaArriba {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        cursor: pointer;
+        }
+    }
+}

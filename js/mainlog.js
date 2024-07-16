@@ -58,5 +58,8 @@ function validar(formulario){
         formulario.contraseña.focus();
         return false;
     }
+
+    alert("Ha iniciado sesion correctamente!");
+    return true;
 } 
 

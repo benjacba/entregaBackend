@@ -3,37 +3,106 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Para que el contenido ocupe al menos toda la altura de la pantalla */
-  background: #000000;
+    flex-direction: column;
+    min-height: 100vh; /* Para que el contenido ocupe al menos toda la altura de la pantalla */
+    background: #000000;
 
- h2,h3,p,label{
-  color: #fff;
- }
-
-
-
-  }
+    h2,h3,p,label{
+      color: #fff;
+    }
   
-  nav {
-    background-color: #000000;
-    color: #fff;
-    padding: 10px;
-    margin-bottom: 2px;
-    
+header{
+  .regylognav{
+    display: flex;
+    padding-left: 320px;
+    padding-right: 30px;
+    font-weight: bold;
+    font-size: large;
   }
 
-  .logo{
+  .registernav{
+    border:#202428 2px solid;
+    border-radius: 20px;
+    padding-right: 4px;
+  }
+
+  .loginnav{
+    border:#202428 2px solid;
+    border-radius: 20px;
+    padding-left: 4px;
+  }
+
+  .apinav2{
+    display: inline-block;
+    font-size: large;
+    border: purple 3px solid;
+    border-radius: 60px;
+    justify-content: center;
+
+  }
+
+  .registernav:hover{
+    transition: all 0.7s ease;
+    border: purple 3px solid;
+  }
+  .loginnav:hover{
+    transition: all 0.7s ease;
+    border: purple 3px solid;
+  }
+
+  .navbar-light .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  }
+
+  .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+  color: #fff;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+  color: #fff;
+  }
+
+  .navbar-toggler {
+  background: #fff;
+  }
+
+  .navbar-nav {
+  text-align: center;
+  }
+
+  .nav-link {
+  padding: .2rem 1rem;
+  }
+
+  .nav-link.active,.nav-link:focus{
+  color: #fff;
+  }
+
+  .navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  }
+
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #fff;
+  }
+}
+
+/*
+.logo{
     margin-left: 150px;
   }
 
-  .logo a{
+ .logo a{
    
     text-decoration: none;
     color: inherit;
 
   }
-  
+*/  
   
   
   main {
@@ -214,6 +283,4 @@ body {
   
 
   }
-
-  
-  
+}

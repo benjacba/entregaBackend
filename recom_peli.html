@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECOMENDACION DE PELICULA</title>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="/css/recom_peli.css">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="container" style="max-width: 1420px;">
+              <a class="navbar-brand" href="/index.html">Cine Codo a Codo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/index.html">Inicio</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html#cartelera">Cartelera</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html#proximosestrenos">Proximos Estrenos</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="/detallespeliculas.html">Informacion peliculas</a>
+                  </li>
+
+                  <span class="regylognav">
+                    <li class="registernav">
+                      <a class="nav-link" href="/register.html">Registrarse</a>
+                    </li>
+
+                    <li class="loginnav">
+                      <a class="nav-link" href="/login.html">Iniciar Sesion</a>
+                    </li>
+                  </span>
+
+                  <li class="apinav">
+                    <a class="nav-link apinav2" href="/api.html">API</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+      
+      <div class="container" id="container">
+
+        <h1 class="h1recomendacionpeli">RECOMENDACION DE PELICULA</h1>
+
+            <section class="principal">
+
+                <form class="formrecomendacionpeli" id="formrecomendacionpeli" action="" method="post">
+
+                <div class="formrow">
+                  <div class="formgroup">
+                    <label for="titulopelicula">TITULO DE PELICULA</label>
+                    <input type="text" name="titulo" id="titulopelicula">
+                  </div>
+                  <div class="formgroup">
+                    <label for="genero">GENERO</label>
+                    <input type="text" name="genero" id="genero"><br>
+                  </div>
+                </div>
+
+                <div class="formrow">
+                  <div class="formgroup">
+                    <label for="duracion">DURACION</label>
+                    <input type="text" name="duracion" id="duracion">
+                  </div>
+
+                  <div class="formgroup">
+                    <label for="sinopsis">SINOPSIS</label>
+                    <input type="text" name="sinopsis" id="sinopsis"><br>
+                  </div>
+                </div>
+
+                  <div class="formgroup">
+                    <label for="imagenpelicula">IMAGEN DE PELICULA</label>
+                    <input type="file" name="imagenpelicula" id="imagenpelicula"><br>
+                  </div>
+
+                    <input type="submit" id="submit" value="Agregar pelicula">
+
+                </form>
+            </section>
+            <br>
+            <hr>
+            <br>
+  
+            <section class="pelisrecomendadas overflow-auto">
+
+              <h2 class="h2pelisrecomendadas">
+                LISTADO DE PELICULAS RECOMENDADAS:
+              </h2><br>
+
+              <table class="tabla_pelis_recom table table-dark table-striped" id="tabla_pelis_recom">
+                  <thead>
+                    <tr>
+                      <th>TITULO</th>
+                      <th>GENERO</th>
+                      <th>DURACION</th>
+                      <th>SINOPSIS</th>
+                      <th>IMAGEN</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyTablePelisRecom">
+
+                </tbody>
+              </table>
+
+            </section>
+
+        </div>
+    </main>
+
+    <br>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-4 bg-dark">
+          <div class="col-md-4 d-flex align-items-center ps-5">
+            <a href="#" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 11 11"><path d="M10 5.5v2a.5.5 0 0 1-1 0a.66.66 0 0 0-.51-.5H8v1.63a.37.37 0 0 1-.37.37H1.37A.37.37 0 0 1 1 8.63V5.37A.37.37 0 0 1 1.37 5h6.26a.37.37 0 0 1 .37.37V6h.49A.66.66 0 0 0 9 5.5a.5.5 0 0 1 1 0zM2.5 2a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3zm0 2a.5.5 0 1 1 0-1a.5.5 0 0 1 0 1zM6 1a2 2 0 1 0 0 4a2 2 0 0 0 0-4zm0 3a1 1 0 1 1 0-2a1 1 0 0 1 0 2z" fill="white"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-light">© 2024 Todos los derechos reservados.</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-primary" href="https://www.x.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M17.71 9.33c.48-.4 1.04-.88 1.29-1.41c-.41.21-.9.34-1.44.41c.5-.36.91-.83 1.12-1.47c-.52.28-1.05.52-1.71.64c-1.55-1.87-5.26-.35-4.6 2.45c-2.61-.16-4.2-1.34-5.52-2.79c-.75 1.22-.1 3.07.79 3.58c-.46-.03-.81-.17-1.14-.33c.04 1.54.89 2.28 2.08 2.68c-.36.07-.76.09-1.14.03c.37 1.07 1.14 1.74 2.46 1.88c-.9.76-2.56 1.29-3.9 1.08c1.15.73 2.46 1.31 4.28 1.23c4.41-.2 7.36-3.36 7.43-7.98M12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10A10 10 0 0 1 2 12A10 10 0 0 1 12 2z" fill="white"/></svg></a></li>
+            <li class="ms-3"><a class="text-body-primary" href="https://www.instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="white" d="M13.61 12.243a1.6 1.6 0 1 1-1.56-1.63a1.62 1.62 0 0 1 1.56 1.63"/><path fill="white" d="M14.763 7.233H9.338a2.024 2.024 0 0 0-2.024 2.024v5.547a2.024 2.024 0 0 0 2.024 2.024h5.425a2.024 2.024 0 0 0 2.024-2.024V9.267a2.026 2.026 0 0 0-2.024-2.034m-2.713 7.723a2.703 2.703 0 1 1 2.642-2.703a2.672 2.672 0 0 1-2.642 2.703m2.936-5.405a.496.496 0 0 1-.496-.506a.506.506 0 1 1 1.012 0a.496.496 0 0 1-.557.506z"/><path fill="white" d="M12.05 2a10 10 0 1 0-.1 20a10 10 0 0 0 .1-20m6.073 12.702a3.39 3.39 0 0 1-3.41 3.411H9.389a3.392 3.392 0 0 1-3.411-3.41V9.378a3.39 3.39 0 0 1 3.41-3.411h5.325a3.39 3.39 0 0 1 3.41 3.41z"/></svg></a></li>
+            <li class="ms-3"><a class="text-body-primary" href="https://www.facebook.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path fill="white" d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02"/></svg></a></li>
+          </ul>
+          <a href="#" class="flechaArriba">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="#7c3aed" d="M11 11.8V15q0 .425.288.713T12 16q.425 0 .713-.288T13 15v-3.2l.9.9q.275.275.7.275t.7-.275q.275-.275.275-.7t-.275-.7l-2.6-2.6q-.3-.3-.7-.3t-.7.3l-2.6 2.6q-.275.275-.275.7t.275.7q.275.275.7.275t.7-.275zM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22"/></svg>
+        </a>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init()</script>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+    ></script>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+    ></script>
+
+    <script src="/js/get_pelirecom.js"></script>
+    <script src="/js/post_pelirecom.js"></script>
+
+</body>
+</html>

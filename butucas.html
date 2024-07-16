@@ -14,48 +14,97 @@
       src="https://kit.fontawesome.com/ba0a8c7c2b.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/css/butucas.css">
     
   </head>
   <body>
-    <nav>
-      <div class="logo">
-        <a href="/index.html"><h1>CINEMA ADROGUE</h1></a>
-      </div>
-    </nav>
-    <main>
-      <section class="movie-details">
-        <h2>Película: Título de la Película</h2>
-        <!-- Aquí puedes incluir información sobre la película -->
-      </section>
-      <section class="purchase-process">
-        <ul class="icon-list">
-          <li>
-            <i class="fas fa-check"></i>
-            <span>Entrada</span>
-            <hr class="line" />
-          </li>
-          <li>
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Ubicaciones</span>
-            <hr class="line" />
-          </li>
-          <li>
-            <i class="fas fa-shopping-cart"></i>
-            <span>Combos</span>
-            <hr class="line" />
-          </li>
-          <li>
-            <i class="fas fa-credit-card"></i>
-            <span>Pago</span>
-            <hr class="line" />
-          </li>
-          <li>
-            <i class="fas fa-check-circle"></i>
-            <span>Confirmación</span>
-          </li>
-        </ul>
-      </section>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container" style="max-width: 1420px;">
+          <a class="navbar-brand" href="/index.html">Cine Codo a Codo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+                <a class="nav-link active" href="/index.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html#cartelera">Cartelera</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html#proximosestrenos">Proximos Estrenos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/detallespeliculas.html">Informacion peliculas</a>
+              </li>
+
+              <span class="regylognav">
+                <li class="registernav">
+                  <a class="nav-link" href="/register.html">Registrarse</a>
+                </li>
+
+                <li class="loginnav">
+                  <a class="nav-link" href="/login.html">Iniciar Sesion</a>
+                </li>
+              </span>
+
+              <li class="apinav">
+                <a class="nav-link apinav2" href="/api.html">API</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+<main>
+  <section class="movie-details">
+    <h2>Película: Título de la Película</h2>
+    <!-- Aquí puedes incluir información sobre la película -->
+  </section>
+  <section class="purchase-process">
+     <ul class="icon-list">
+      <li>
+        <i class="fas fa-check"></i>
+        <span>Entrada</span>
+        <hr class="line" />
+      </li>
+      <li>
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Ubicaciones</span>
+        <hr class="line" />
+      </li>
+      <li>
+        <i class="fas fa-shopping-cart"></i>
+        <span>Combos</span>
+        <hr class="line" />
+      </li>
+      <li>
+        <i class="fas fa-credit-card"></i>
+        <span>Pago</span>
+        <hr class="line" />
+      </li>
+      <li>
+        <i class="fas fa-check-circle"></i>
+        <span>Confirmación</span>
+      </li>
+    </ul>
+  </section>
+
       <section class="seating-selection">
         <div class="seats">
           <h3>Elegí las butacas</h3>
@@ -211,7 +260,6 @@
               <input type="text" id="butacas" name="butacas">
               <p>Total: $XXX</p>
               <a href="/pago.html"> <button type="button"  style="color: #fff;" >Continuar</button></a>
-              
             </div>
 
           </div>
